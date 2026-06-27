@@ -1,17 +1,11 @@
+import DashboardLayout from "../../components/layout/DashboardLayout";
+
 function Dashboard() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        fontSize: "30px",
-        fontWeight: "bold",
-      }}
-    >
-      Welcome to LifeHubAI Dashboard 🚀
-    </div>
+    <DashboardLayout>
+      <h1>Dashboard</h1>
+      <p>Welcome to LifeHubAI 🚀</p>
+    </DashboardLayout>
   );
 }
 
