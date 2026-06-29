@@ -1,18 +1,26 @@
-import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 function DashboardLayout({ children }) {
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
+    <div className="flex h-screen bg-gray-100">
+
+      {/* Sidebar */}
       <Sidebar />
 
-      <div style={{ flex: 1 }}>
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+
+        {/* Navbar */}
         <Navbar />
 
-        <main style={{ padding: "20px" }}>
+        {/* Page Content */}
+        <main className="flex-1 overflow-y-auto p-6">
           {children}
         </main>
+
       </div>
+
     </div>
   );
 }
